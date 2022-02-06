@@ -24,5 +24,10 @@ namespace CountriesLinQ
         {
             InitializeComponent();
         }
+
+        private void Start_OnClick1(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

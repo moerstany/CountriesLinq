@@ -1,0 +1,621 @@
+﻿create table tab_country(
+id_country INT NOT NULL PRIMARY KEY auto_increment,
+country_name nvarchar(100) NOT NULL check( country_name != '' ),
+country_area double  NOT Null  check ( country_area>0),
+country_population double  NOT Null  check ( country_population>0),
+world_parts_id int NOT Null,
+foreign key (world_parts_id) references tab_world_parts(world_parts_id)
+    on delete no action
+    on update no action    );
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Австралия', '7692024', '21050000', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Вануату', '12190', '196178', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Кирибати', '811', '96335', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Маршалловы Острова', '181', '73630', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Микронезия', '702', '135869', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Науру', '21', '12309', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Новая Зеландия', '268680', '4108037', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Палау', '458', '19409', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Палау', '458', '19409', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Папуа — Новая Гвинея', '462840', '5172033', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Самоа', '2935', '178631', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Соломоновы Острова', '28450', '494786', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Тонга', '748', '108137', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Тувалу', '26', '11146', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Фиджи', '18274', '856346', '1');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Канада', '9984670', '38638800', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Оттава','15','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Мексика', '1972550', '128649565', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Мехико','16','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'США', '9519431', '333449281', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Вашингтон','17','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Белиз', '22966', '430131', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Бельмопан','18','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Гватемала', '108889', '14373472', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Гватемала','20','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Гондурас', '112090', '8448465', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Тегусигальпа','21','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Коста-рика', '51100', '5097988', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Сан-Хосе','22','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Никарагуа', '129494', '6071045', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Манагуа','23','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Панама', '78200', '4252620', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Панама','24','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Сальвадор', '21400', '6460000', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Сан-Сальвадор','25','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Куба', '110860', '11061886', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Гавана','26','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Гаити', '27750', '11508242', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Порт-о-Пренс','27','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Ямайка', '10991', '2930050', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Кингстон','28','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Аргентина', '2780400', '45195777', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Буэнос-Айрес','29','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Боливия', '1098581', '11639909', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Сукре','30','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Бразилия', '8515767', '207363391', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Бразилиа','31','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Венесуэла', '916445', '28887118', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Каракас','32','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Перу', '1285216', '32162184', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Лима','33','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Чили', '756102', '18186770', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Сантьяго','34','2');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Эквадор', '283561', '17816293', '2');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Кито','35','2');
+
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Алжир', '2381740', '39666519', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Алжир','36','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Ангола', '1246700', '25021974', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Луанда','37','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Ботсвана', '581726', '2262485', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Габороне','38','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Буркина-Фасо', '274000', '18450494', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Уагадугу','39','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Бурунди', '27830', '11178921', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Гитега','40','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Египет', '1001449', '87266562', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Каир','41','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Замбия', '752614', '15473905', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Лусака','42','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Зимбабве', '390757', '15602751', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Хараре','43','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Камерун', '475442', '23344179', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Яунде','44','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Кения', '580367', '46050302', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Найроби','45','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Конго', '2344858', '77266814', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Киншаса','46','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Кот-д’Ивуар', '322460', '22701556', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Ямусукро','47','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Кот-д’Ивуар', '322460', '22701556', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Ямусукро','48','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Ливия', '1759540', '6278438', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Триполи','49','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Мадагаскар', '587041', '24235390', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Антананариву','50','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Марокко', '446550', '33810000', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Рабат','51','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Мозамбик', '801590', '27977863', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Мапуту','52','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Нигерия', '923768', '194534580', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Абуджа','53','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Танзания', '945087', '53470420', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Дар-эс-Салам','54','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Эфиопия', '1104300', '90076012', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Аддис-Абеба','55','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'ЮАР', '1221037', '54956900', '3');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Кейптаун','56','3');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Австрия', '83879', '8923507', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Вена','57','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Бельгия', '30528', '11510988', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Брюссель','58','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Великобритания', '243809', '66273576', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Лондон','59','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Германия', '357408', '83149300', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Берлин','60','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Нидерланды', '41543', '17611900', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Амстердам','61','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Франция', '551500', '68084217', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Париж','62','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Швейцария', '41284', '8558758', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Берн','63','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Белорусия', '207600', '9349645', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Минск','64','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Болгария', '110993', '6999908', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'София','65','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Венгрия', '93036', '9730000', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Будапешт','66','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Польша', '312679', '38244000', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Варшава','67','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Россия', '17125246', '145478097', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Москва','68','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Норвегия', '385207', '5391369', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Осло','69','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Финляндия', '338145', '5180000', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Хельсинки','70','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Швеция', '447435', '10380421', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Стокгольм','71','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Греция', '131957', '10741165', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Афины','72','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Испания', '505990', '47394223', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Мадрид','73','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Италия', '302073', '59236213', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Рим','74','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Португалия', '92225', '10347892', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Лиссабон','75','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Азербайджан', '86692', '10152829', '4');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Баку','76','4');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Вьетнам', '331210', '97040334', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Ханой','77','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Грузия', '69789', '3728573', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Тбилиси','78','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Израиль', '20770', '9136000', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Иерусалим','79','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Индия', '3287263', '1381790000', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Нью-Дели','80','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Индонезия', '1919440', '270203917', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Джакарта','81','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Ирак', '437072', '37056169', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Багдад','82','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Казахстан', '2724902', '19082467', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Астана','84','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Камбоджа', '181035', '16926984', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Пномпень','85','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Киргизия', '199951', '6523529', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Бишкек','86','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Китай', '9598962', '1411778724', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Пекин','87','5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'КНДР', '120540', '25899347', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Пхеньян','88', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Республика Корея', '100210', '51269830', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Сеул','89', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Малайзия', '329758', '32763726', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Куала-Лумпур','90', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Монголия', '1564116', '3256176', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Улан-Батор','91', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Непал', '147516', '30430267', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Катманду','92', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'ОАЭ', '83600', '10207863', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Дубай','93', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Оман', '309500', '5635601', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Маскат','94', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Пакистан', '803940', '221180890', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Исламабад','95', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Саудовская Аравия', '2149690', '34218169', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Эр-Рияд','96', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Таджикистан', '141400', '9126600', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Душанбе','97', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Тайланд', '513120', '66171493', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Бангкок','98', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Туркмения', '491200', '6200000', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Ашхабад','99', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Турция', '783562', '67803927', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Анкара','100', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Узбекистан', '448924', '35640440', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Ташкент','101', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Филиппины', '299764', '110324510', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Манила','102', '5');
+
+INSERT INTO host1323541_sbd04.tab_country (id_country, country_name, country_area,country_population, world_parts_id )
+VALUES (DEFAULT, 'Япония', '377976', '125552000', '5');
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Токио','103', '5');
+
+
+
+create table tab_capital(
+id_capital INT NOT NULL PRIMARY KEY auto_increment,
+capital_name nvarchar(100) NOT NULL check( capital_name != '' ),
+id_country int NOT Null,
+foreign key (id_country) references tab_country(id_country)
+    on delete no action
+    on update no action,
+id_country int NOT Null,
+foreign key (world_parts_id) references tab_world_parts(world_parts_id)
+    on delete no action
+    on update no action );
+
+INSERT INTO host1323541_sbd04.tab_capital ( id_capital, capital_name,id_country,world_parts_id)
+VALUES ( DEFAULT,'Канберра','1','1'),
+       ( DEFAULT,'Порт-Вила','2','1'),
+      ( DEFAULT,'Южная Тарава','3','1'),
+       ( DEFAULT,'Маджуро','4','1'),
+       ( DEFAULT,'Паликир','5','1'),
+       ( DEFAULT,'Ярен','6','1'),
+       ( DEFAULT,'Веллингтон','7','1'),
+       ( DEFAULT,'Нгерулмуд','8','1'),
+       ( DEFAULT,'Порт-Морсби','9','1'),
+       ( DEFAULT,'Апиа','10','1'),
+       ( DEFAULT,'Хониара','11','1'),
+        ( DEFAULT,'Нукуалофа','12','1'),
+        ( DEFAULT,'Фунафути','13','1'),
+        ( DEFAULT,'Сува','14','1')
+;
+
+create table tab_world_parts(
+world_parts_id INT NOT NULL PRIMARY KEY auto_increment,
+world_parts_name nvarchar(100) NOT NULL check( World_parts_name != '' )
+);
+
+INSERT INTO host1323541_sbd04.tab_world_parts ( world_parts_id, world_parts_name)
+VALUES ( DEFAULT,'Австралия'),
+       ( DEFAULT,'Америка'),
+       ( DEFAULT,'Африка'),
+       ( DEFAULT,'Европа'),
+       ( DEFAULT,'Азия')
+;
